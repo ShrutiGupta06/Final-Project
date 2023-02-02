@@ -1,0 +1,586 @@
+@font-face {
+    font-family: "Neue Haas Grotesk Text Pro";
+    src: url(Neue\ Haas\ Grotesk\ Text\ Pro.ttf);
+}
+
+@font-face {
+    font-family: "DS-Digital";
+    src: url(DS-Digital.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#home>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.5);
+}
+
+#home #overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#overlay #nav,
+#second #nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 6vh 4vw;
+    position: absolute;
+    z-index: 999999;
+}
+
+#nav h1 {
+    font-family: "Neue Haas Grotesk Text Pro";
+    font-size: 1.3vw;
+    line-height: 1;
+}
+
+#nav #nav-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#nav-right #nav-right-1 {
+    height: 2vh;
+    width: 5vw;
+    display: flex;
+}
+
+#nav-right-1 #color1 {
+    height: 2vh;
+    width: 0.833vw;
+    background-color: rgb(212.5, 212.5, 212.5);
+}
+
+#nav-right-1 #color2 {
+    height: 2vh;
+    width: 0.833vw;
+    background-color: rgb(170, 170, 170);
+}
+
+#nav-right-1 #color3 {
+    height: 2vh;
+    width: 0.833vw;
+    background-color: rgb(127.5, 127.5, 127.5);
+}
+
+#nav-right-1 #color4 {
+    height: 2vh;
+    width: 0.833vw;
+    background-color: rgb(85, 85, 85);
+}
+
+#nav-right-1 #color5 {
+    height: 2vh;
+    width: 0.833vw;
+    background-color: rgb(65, 61, 61);
+}
+
+#nav-right-1 #color6 {
+    height: 2vh;
+    width: 0.833vw;
+    background-color: rgb(0, 0, 0);
+}
+
+#nav-right #nav-right-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 5vw;
+}
+
+#nav-right-2 h4 {
+    font-size: 0.8vw;
+    font-family: "DS-Digital";
+
+}
+
+#overlay #btm-nav,
+#second #btm-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 2vw;
+    position: absolute;
+    bottom: 0;
+    z-index: 999999;
+}
+
+#btm-nav img {
+    width: 7vw;
+
+}
+
+#overlay #center-img {
+    width: 30vw;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+}
+
+#center-img h5 {
+    margin-bottom: 1vh;
+    font-weight: 500;
+    font-size: 0.85vw;
+    font-family: "Neue Haas Grotesk Text Pro";
+}
+
+#c-img {
+    width: 100%;
+    height: 36vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#c-img img {
+    height: 95%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#overlay>h1#gallery {
+    position: absolute;
+    z-index: 999999;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 12vw;
+    font-family: "Neue Haas Grotesk Text Pro";
+    font-weight: 400;
+}
+
+#overlay>h1#pf {
+    color: #ffff;
+    white-space: nowrap;
+    position: absolute;
+    z-index: 999999;
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, 0%) rotate(40deg);
+    transform-origin: 0% 50%;
+    font-size: 12vw;
+    font-family: "Neue Haas Grotesk Text Pro";
+    font-weight: 400;
+}
+
+#overlay #gola {
+    width: 5vw;
+    height: 5vw;
+    background-color: #d5a7b4;
+    border-radius: 50%;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+}
+
+#overlay #smallcircle {
+    width: 45vw;
+    height: 45vw;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#overlay #circle {
+    width: 70vw;
+    height: 70vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: black; */
+}
+
+#circle img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#top {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#top img:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(-180deg) scale(2);
+}
+
+#top img:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(-180deg) scale(1.5);
+}
+
+#top img:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(-180deg) scale(1);
+}
+
+#btm {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#btm img:nth-child(1) {
+    transform: translate(-50%, -50%) scale(2);
+}
+
+#btm img:nth-child(2) {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+#btm img:nth-child(3) {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay #pinkpart {
+    width: 32vw;
+    height: 32vw;
+    background-color: #d5a7b4;
+    position: absolute;
+    left: 0;
+    top: 120%;
+    z-index: 99999;
+    padding: 13vw 4vw 0vw 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 16vh;
+}
+
+#pinkpart #pinkpart-elem {
+    height: 5vw;
+    width: 10vw;
+
+}
+
+#pinkpart-elem h5 {
+    margin-bottom: 1vh;
+    font-weight: 500;
+    font-size: 0.85vw;
+    font-family: "Neue Haas Grotesk Text Pro";
+    color: #ffff;
+}
+
+#pinkpart-elem h5.space {
+    margin-left: 2vw;
+}
+
+#pinkpart h3 {
+    font-family: "DS-Digital";
+    color: rgb(255, 255, 255);
+    font-size: 2.3vw;
+    font-weight: 100;
+    white-space: nowrap;
+}
+
+#pinkpart h3 sup {
+    font-family: "Neue Haas Grotesk Text Pro";
+    font-size: 0.8vw;
+    font-weight: 500;
+}
+
+#main #second {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#second #s-top {
+    width: 100%;
+    height: 60%;
+    border-bottom: 1px solid #dadada;
+    position: relative;
+    overflow: hidden;
+    /* display: flex; */
+}
+
+#s-top h1 {
+    font-size: 27vw;
+    font-family: "Neue Haas Grotesk Text Pro";
+    line-height: 1;
+    position: absolute;
+    bottom: -13%;
+    left: 100%;
+    font-weight: 100;
+    z-index: 9999;
+    color: white;
+
+}
+
+#s-top .circle {
+    height: 14vw;
+    width: 14vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 150%;
+    transform: translate(-50%, -50%);
+
+}
+
+#s-top .pink {
+    left: 42%;
+    background: linear-gradient(to right, #D5A7B4, #D5A7B4);
+    z-index: 999;
+}
+
+#s-top .purple {
+    left: 58%;
+    background-color: #B4AAD5;
+}
+
+#s-top #parent-box {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#parent-box .pink-box {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 20%;
+    z-index: 9999;
+    transform: scaleY(0);
+    transform-origin: 50% 100%;
+}
+
+#parent-box #box1 {
+    left: 0%;
+    background-color: #DFB1BE;
+
+}
+
+#parent-box #box2 {
+    left: 20%;
+    background-color: rgb(233, 187, 200);
+
+}
+
+#parent-box #box3 {
+    left: 40%;
+    background-color: rgb(243, 197, 210);
+
+}
+
+#parent-box #box4 {
+    left: 60%;
+    background-color: rgb(253, 207, 220);
+
+}
+
+#parent-box #box5 {
+    left: 80%;
+    background-color: rgb(255, 227, 240);
+
+}
+
+#parent-box #box6 {
+    left: 100%;
+    background-color: rgb(252, 245, 249);
+
+}
+
+.pink-box .child-box1 {
+    position: absolute;
+    bottom: 17%;
+    height: 17%;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+}
+
+.pink-box .child-box2 {
+    position: absolute;
+    bottom: 0%;
+    height: 17%;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+}
+
+#box1 .a {
+    right: 100%;
+    background-color: #DFB1BE;
+}
+
+#box2 .b {
+    right: 80%;
+    background-color: rgb(233, 187, 200);
+}
+
+#box3 .c {
+    right: 60%;
+    background-color: rgb(243, 197, 210);
+}
+
+#box4 .d {
+    right: 40%;
+    background-color: rgb(253, 207, 220);
+}
+
+#box5 .e {
+    right: 20%;
+    background-color: rgb(255, 227, 240);
+}
+
+#box6 .f {
+    right: 0%;
+    background-color: rgb(255, 247, 251);
+}
+
+#second #s-btm {
+    width: 100%;
+    height: 40%;
+    position: relative;
+}
+
+#s-btm p {
+    text-align: center;
+    font-family: "Neue Haas Grotesk Text Pro";
+    font-size: 3.5vw;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+
+}
+
+#s-btm p:nth-child(2) {
+    opacity: 0;
+
+}
+
+@media (max-width:500px) {
+
+    #overlay #nav,
+    #second #nav {
+        padding: 6vh 8vw;
+    }
+
+    #nav h1 {
+        font-size: 5vw;
+    }
+
+    #overlay #btm-nav,
+    #second #btm-nav {
+        padding: 3vh 8vw;
+    }
+
+    #btm-nav img {
+        width: 19vw;
+    }
+
+    #overlay #center-img {
+        width: 80vw;
+    }
+
+    #center-img h5 {
+        font-size: 2.85vw;
+    }
+
+    #center-img #c-img {
+        height: 27vh;
+    }
+
+    #overlay>h1#gallery {
+        bottom: 15%;
+        font-weight: 900;
+        font-size: 14vw;
+    }
+
+    #overlay>h1#pf {
+
+        font-weight: 900;
+        font-size: 14vw;
+    }
+
+    #overlay #gola {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    #overlay #pinkpart {
+        width: 80vw;
+        height: 80vw;
+        gap: 16vh;
+        padding-top: 15vh;
+        padding-left: 12vw;
+    }
+
+    #pinkpart #pinkpart-elem h5 {
+        font-size: 2.5vw;
+    }
+
+    #pinkpart h3 {
+        font-size: 6vw;
+    }
+
+    #overlay #circle {
+        width: 150vw;
+        height: 150vw;
+    }
+
+    #overlay #smallcircle {
+        width: 95vw;
+        height: 95vw;
+    }
+
+    #second #s-top .circle {
+        height: 33vw;
+        width: 33vw;
+    }
+
+    #second #s-top h1 {
+        bottom: -6%;
+        font-size: 50vw;
+    }
+
+    #second #s-btm P {
+        font-size: 5.5vw;
+        width: 90%;
+    }
+}
